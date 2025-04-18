@@ -259,3 +259,46 @@ RejoinButton.MouseButton1Click:Connect(function()
 end)
 
 loadCategories()
+
+-- Discord Tab
+local DiscordInvite = "https://discord.gg/TEsUuKfK6P"
+local discordTab = window:Tab("Discord")
+
+discordTab:Button("Copy Discord Invite", function()
+    setclipboard(DiscordInvite)
+
+    local CoreGui = game:GetService("CoreGui")
+    local NotificationGui = Instance.new("ScreenGui")
+    NotificationGui.Name = "DiscordNotification"
+    NotificationGui.ResetOnSpawn = false
+    NotificationGui.Parent = CoreGui
+
+    local Frame = Instance.new("Frame")
+    Frame.Size = UDim2.new(0, 300, 0, 80)
+    Frame.Position = UDim2.new(1, -310, 1, -120)
+    Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    Frame.BorderSizePixel = 0
+    Frame.BackgroundTransparency = 0.1
+    Frame.AnchorPoint = Vector2.new(0, 0)
+    Frame.Parent = NotificationGui
+
+    local UICorner = Instance.new("UICorner", Frame)
+    UICorner.CornerRadius = UDim.new(0, 8)
+
+    local Title = Instance.new("TextLabel")
+    Title.Text = "Discord Invite Copied!"
+    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Title.TextSize = 18
+    Title.Font = Enum.Font.GothamSemibold
+    Title.Position = UDim2.new(0, 10, 0, 5)
+    Title.Size = UDim2.new(1, -20, 0, 25)
+    Title.BackgroundTransparency = 1
+    Title.TextXAlignment = Enum.TextXAlignment.Left
+    Title.Parent = Frame
+
+    local Invite = Instance.new("TextLabel")
+    Invite.Text = DiscordInvite
+    Invite.TextColor3 = Color3.fromRGB(170, 170, 255)
+    Invite.TextSize = 16
+    Invite.Font = Enum.Font.Gotham
+    Invite
