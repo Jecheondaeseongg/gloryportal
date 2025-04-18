@@ -295,4 +295,13 @@ discordTab:Button("Copy Discord Invite", function()
     Invite.TextColor3 = Color3.fromRGB(170, 170, 255)
     Invite.TextSize = 16
     Invite.Font = Enum.Font.Gotham
-    
+    Invite.Position = UDim2.new(0, 10, 0, 35)
+    Invite.Size = UDim2.new(1, -20, 0, 25)
+    Invite.BackgroundTransparency = 1
+    Invite.TextXAlignment = Enum.TextXAlignment.Left
+    Invite.Parent = Frame
+
+    -- Finalizando a notificação após 3 segundos
+    wait(7) 
+    NotificationGui:Destroy()
+end) -- Fechamento da função Button
