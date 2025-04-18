@@ -143,6 +143,9 @@ local scripts = {
     ["Rune Slayer"] = {
         ["ZYG HUB"] = 'loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/be048f755784fb48ec3c5206c0c97d18.lua"))()'
     },
+    ["Mushyo / Universal Mic"] = {
+        ["KSX HUB"] = 'loadstring(game:HttpGet('https://raw.githubusercontent.com/ksx1s/ksx-s/refs/heads/main/Panel'))()'
+    },
     ["Fisch"] = {
         ["ZYG HUB"] = 'loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/be048f755784fb48ec3c5206c0c97d18.lua"))()'
     },
