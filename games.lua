@@ -295,4 +295,4 @@ discordTab:Button("Copy Discord Invite", function()
     Invite.TextColor3 = Color3.fromRGB(170, 170, 255)
     Invite.TextSize = 16
     Invite.Font = Enum.Font.Gotham
-    Invite
+    
